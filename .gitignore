@@ -1,0 +1,8 @@
+# System generated
+.DS_Store
+
+# Build/Dist folders
+dist
+
+#Dependencies
+node_modules
