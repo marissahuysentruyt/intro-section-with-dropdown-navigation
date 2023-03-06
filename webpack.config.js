@@ -37,6 +37,7 @@ module.exports = {
   //   runtimeChunk: "single",
   // },
   plugins: [
+    // Plugin to use project's index.html as template for dist folder
     new HtmlWebpackPlugin({ template: "index.html"}),
     // Plugin for hot module replacement
     new webpack.HotModuleReplacementPlugin(),
