@@ -1,19 +1,38 @@
 import Handlebars from "handlebars/dist/cjs/handlebars";
 
 const context = {
-  navigation: [
-    "Features",
-    "Company",
-    "Careers",
-    "About"
-  ],
   title: "Make Remote work",
   subtitle: "Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.",
   link: "Learn more",
   user_action: [
     "Login",
     "Register"
-  ]
+  ],
+  navigation: [
+    {
+      name: "Features",
+      menu: [
+        "Todo List",
+        "Calendar",
+        "Reminders",
+        "Planning"
+      ],
+    },
+    {
+      name: "Company",
+      menu: [
+        "History",
+        "Our Team",
+        "Blog"
+      ]
+    },
+    {
+      name: "Careers"
+    },
+    {
+      name: "About"
+    }
+  ],
 };
 
 // defines the script tag for this code
