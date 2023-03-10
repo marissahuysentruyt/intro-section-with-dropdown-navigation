@@ -1,13 +1,48 @@
-.mobile-menu {
+.js-mobile-menu {
   // border: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 1.25rem;
   height: 100%;
 
-  &__nav-button {
+  &__open-nav-button {
     border: none;
     // border: 1px solid red;
-    background-color: #fff;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: 45rem) {
+      display: none;
+    }
+
+    svg {
+      position: relative;
+      z-index: -1;
+      max-width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-self: center;
+      justify-content: center;
+    }
+  }
+
+  &__close-nav-button {
+    border: none;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 2;
+    display: none;
+
+    @media (min-width: 45rem) {
+      display: none;
+    }
+
+    svg {
+      position: relative;
+      z-index: -1;
+      max-width: 2rem;
+      height: 2rem;
+    }
   }
 }
