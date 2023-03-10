@@ -1,6 +1,12 @@
 // SETTINGS
 @use "./settings/colors";
+
+// ELEMENTS
+@use "./elements/header";
+
 // COMPONENTS
+@use "./components/navBar";
+@use "./components/mobileMenu";
 @use "./components/attribution";
 @use "./components/dropdownMenu";
 
