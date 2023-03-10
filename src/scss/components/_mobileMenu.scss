@@ -1,0 +1,33 @@
+.js-mobile-menu {
+  // border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem;
+  height: 100%;
+
+  &__open-nav-button {
+    border: none;
+    // border: 1px solid red;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 2;
+
+    svg {
+      position: relative;
+      z-index: -1;
+    }
+  }
+
+  &__close-nav-button {
+    border: none;
+    background-color: #fafafa;
+    position: relative;
+    z-index: 2;
+    display: none;
+
+    svg {
+      position: relative;
+      z-index: -1;
+    }
+  }
+}

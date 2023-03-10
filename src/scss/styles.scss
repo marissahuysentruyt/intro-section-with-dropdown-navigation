@@ -1,2 +1,7 @@
+// ELEMENTS
+@use "./elements/header";
+
 // COMPONENTS
+@use "./components/navBar";
+@use "./components/mobileMenu";
 @use "./components/attribution";
