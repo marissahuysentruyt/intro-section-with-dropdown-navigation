@@ -12,18 +12,36 @@ const context = {
     {
       name: "Features",
       menu: [
-        "Todo List",
-        "Calendar",
-        "Reminders",
-        "Planning"
+        {
+          link: "Todo List",
+          src: "src/images/icon-todo.svg"
+        },
+        {
+          link: "Calendar",
+          src: "src/images/icon-calendar.svg"
+        },
+        {
+          link: "Reminders",
+          src: "src/images/icon-reminders.svg"
+        },
+        {
+          link: "Planning",
+          src: "src/images/icon-planning.svg"
+        }
       ],
     },
     {
       name: "Company",
       menu: [
-        "History",
-        "Our Team",
-        "Blog"
+        {
+          link: "History",
+        },
+        {
+          link: "Our History",
+        },
+        {
+          link: "Blog",
+        }
       ]
     },
     {
