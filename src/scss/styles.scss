@@ -1,2 +1,11 @@
+// SETTINGS
+@use "./settings/colors";
 // COMPONENTS
 @use "./components/attribution";
+@use "./components/dropdownMenu";
+
+// COLORS (override Bootstrap colors)
+@import "./settings/colors";
+
+// this includes ALL of bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
