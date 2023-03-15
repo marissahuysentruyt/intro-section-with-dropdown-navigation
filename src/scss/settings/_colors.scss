@@ -1,5 +1,6 @@
-$c-white: #fafafa;
-$c-black: #151515;
+$c-white: hsl(0, 0%, 98%);
+$c-black: hsl(0, 0%, 8%);
+$c-gray: hsl(0, 0%, 41%);
 $c-purple: #8E4CB6;
 $c-yellow: #EDD656;
 $c-dark-blue: #726DEE;
@@ -8,12 +9,12 @@ $c-light-blue: #4BB0DA;
 // COLORS (override Bootstrap colors)
 $body-bg: $c-white;
 $body-color: $c-black;
-$link-color: $c-dark-blue;
-$link-hover-color: $c-purple;
+$link-color: $c-gray;
+$link-hover-color: $c-black;
 
 // in the open dropdown menus
 $dropdown-bg: $c-white;
-$dropdown-link-color: $c-dark-blue;
+$dropdown-link-color: $c-gray;
 $dropdown-link-hover-color: $c-purple;
 
 

@@ -16,9 +16,11 @@
     background-color: $c-white;
     box-shadow: 0 0.25rem 0.25rem 0.25rem rgba(21, 21, 21, 0.08);
 
-    @media (min-width: 40rem) {
+    @media (min-width: 45rem) {
       width: 80%;
       left: 20%;
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
 
@@ -78,12 +80,24 @@
     padding: 0.5rem 0 0;
     gap: 0.5rem;
     height: 100%;
+    text-align: center;
 
     @media (min-width: 45rem) {
       flex-direction: row;
       padding: 0 0.5rem;
       align-items: center;
       gap: 1.5rem;
+    }
+
+    li:last-child {
+      border: 0.125rem solid transparent;
+      width: 100%;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        border-radius: 0.75rem;
+        border: 0.125rem solid $c-black;
+      }
     }
   }
 
@@ -94,7 +108,6 @@
       display: flex;
       position: absolute;
       width: calc(100% - 8rem);
-      max-width: 72rem;
       top: 0;
       right: 0;
       flex-direction: row;
@@ -103,4 +116,4 @@
       // border: 1px solid red;
     }
   }
-};
+}

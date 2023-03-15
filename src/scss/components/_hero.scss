@@ -1,0 +1,104 @@
+@import "../settings/colors";
+
+.hero {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1.25rem;
+  gap: 1rem;
+
+  @media (min-width: 45rem) {
+    display: grid;
+    grid-template-areas: 
+      "heading image"
+      "subheading image"
+      "link image"
+      "clients image";
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 4rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    // border: 1px solid red;
+
+    @media (min-width: 45rem) {
+      grid-area: image;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-family: "Epilogue", sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    
+    @media (min-width: 45rem) {
+      grid-area: heading;
+      padding: 1.25rem 1.25rem 0 0;
+      font-size: 4rem;
+      max-width: 80%;
+    }
+  }
+
+  &__subheading {
+    // border: 1px solid red;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+    color: $c-gray;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.4;
+    
+    @media (min-width: 45rem) {
+      padding: 0 1.25rem 0 0;
+      grid-area: subheading;
+      text-align: left;
+    }
+  }
+
+  &__link {
+    background-color: $c-black;
+    color: $c-white;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    transition: all 150ms ease-in-out;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border: 0.125rem solid transparent;
+    margin-bottom: 3rem;
+
+    &:hover {
+      border: 0.125rem solid $c-black;
+      color: $c-black;
+      background-color: $c-white;
+    }
+
+    @media (min-width: 45rem) {
+      max-width: 10rem;
+    }
+  }
+
+  &__clients {
+    // border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+
+    @media (min-width: 45rem) {
+      grid-area: clients;
+    }
+
+    .clients__images {
+      // border: 1px solid blue;
+      width: 100%;
+    }
+  }
+}

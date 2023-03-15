@@ -3,12 +3,14 @@
 
 // ELEMENTS
 @use "./elements/header";
+@use "./elements/body";
 
 // COMPONENTS
-@use "./components/navBar";
-@use "./components/mobileMenu";
+@use "./components/jsNavigation";
+@use "./components/mobileMenuHeader";
 @use "./components/attribution";
-@use "./components/dropdownMenu";
+@use "./components/dropdownButtons";
+@use "./components/hero";
 
 // COLORS (override Bootstrap colors)
 @import "./settings/colors";

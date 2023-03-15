@@ -1,13 +1,14 @@
 @import "../settings/colors";
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 0.75rem;
+  text-align: center;
 }
 
 .attribution a {
   color: $c-dark-blue;
 
   &:hover {
-    color: $c-purple;
+    color: $c-black;
   }
 }
