@@ -1,3 +1,6 @@
+@import "../settings/colors";
+
+// mobile menu styles
 .js-mobile-menu {
   // border: 1px solid black;
   display: flex;
@@ -8,7 +11,7 @@
   &__open-nav-button {
     border: none;
     // border: 1px solid red;
-    background-color: #fafafa;
+    background-color: $c-white;
     position: relative;
     z-index: 2;
 
@@ -29,7 +32,7 @@
 
   &__close-nav-button {
     border: none;
-    background-color: #fafafa;
+    background-color: $c-white;
     position: relative;
     z-index: 2;
     display: none;

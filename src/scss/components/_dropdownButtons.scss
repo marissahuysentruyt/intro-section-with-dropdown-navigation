@@ -1,0 +1,39 @@
+@import "../settings/colors";
+
+// dropdown buttons only (Features/Company)
+.dropdown {
+  // border: 1px solid red;
+  .btn {
+    color: $c-dark-blue;
+    border: none;
+    background-color: $c-white;
+    padding: 0;
+    // border: 1px solid red;
+
+    &:hover {
+      color: $c-black;
+      background-color: $c-white;
+    }
+
+    &:first-child:active {
+      background-color: $c-black;
+      color: $c-white;
+    }
+
+    &.show {
+      // border: 1px solid red;
+      color: $c-black;
+      background-color: $c-white;
+    }
+  }
+}
+
+// other links in navigation
+.not-dropdown {
+  // border: 1px solid red;
+  text-decoration: none;
+
+  &:hover:not(.mobile-menu__home-button) {
+    color: $c-black !important;
+  }
+}
