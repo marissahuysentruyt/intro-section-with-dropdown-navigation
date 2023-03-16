@@ -1,5 +1,7 @@
 import "./scss/styles.scss";
 const template = require("./template.handlebars");
+import "bootstrap/js/dist/dropdown";
+// import "./images/image-hero-desktop.png";
 
 const openMobileMenuButton = document.querySelector(".js-mobile-menu__open-nav-button");
 const closeMobileMenuButton = document.querySelector(".js-mobile-menu__close-nav-button");
