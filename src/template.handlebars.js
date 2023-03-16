@@ -1,7 +1,7 @@
 import Handlebars from "handlebars/dist/cjs/handlebars";
 
 const context = {
-  title: "Make Remote work",
+  title: "Make remote work",
   subtitle: "Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.",
   link: "Learn more",
   user_action: [
