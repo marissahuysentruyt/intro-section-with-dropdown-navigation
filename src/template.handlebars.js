@@ -14,19 +14,19 @@ const context = {
       menu: [
         {
           link: "Todo List",
-          src: "src/images/icon-todo.svg"
+          src: "./src/images/icon-todo.svg"
         },
         {
           link: "Calendar",
-          src: "src/images/icon-calendar.svg"
+          src: "./src/images/icon-calendar.svg"
         },
         {
           link: "Reminders",
-          src: "src/images/icon-reminders.svg"
+          src: "./src/images/icon-reminders.svg"
         },
         {
           link: "Planning",
-          src: "src/images/icon-planning.svg"
+          src: "./src/images/icon-planning.svg"
         }
       ],
     },
