@@ -20,7 +20,7 @@ module.exports = {
           // Translates CSS into CommonJS
           "css-loader",
           {
-            // Run postcss actions
+            // Run postcss actions (Bootstrap requirements)
             loader: "postcss-loader",
             options: {
               // `postcssOptions` is needed for postcss 8.x;
@@ -39,10 +39,15 @@ module.exports = {
           "sass-loader",
         ],
       },
+      // images/asset loader
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
       },
+      {
+        test: /\.handlebars$/,
+        loader: "handlebars-loader",
+      }
     ],
   },
   devServer: {
